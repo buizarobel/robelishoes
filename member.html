@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBER</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="memberstyle.css">
+    
+</head>
+<body>
+
+  <a href="index.html" class="back-btn">Home</a>
+
+  <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="Robel.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Programmer</span>
+          <span class="card__name">Buiza, Robel</span>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="rick.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Web Designer</span>
+          <span class="card__name">Serrano, Rick</span>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="kenyon.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Technical Report</span>
+          <span class="card__name">Escandor, Kenyon Martin.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+</body>
+</html>
